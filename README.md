@@ -1,8 +1,9 @@
 # Neural Network
 
-Created a neural network using the numpy library, pandas library, and MNIST database to classify images of hand-written digits. This program uses data from 28x28 pixel training images (784 nodes) from kaggle. Each pixel has a value associated with it between 0-255, indicating the lightness or darkness of the pixel. The dataset consists of columns starting with the label of the actual number written by the user, followed by the pixel values associated with the hand-written image. This neural network will read data, perform processing on the data using activation functions, and make a prediction on what number was written. With each iteration, the program is trained by reducing deviations from the labels, improving the accuracy of the predictions.
+Created a neural network using the numpy library, pandas library, and MNIST database to classify images of hand-written digits. This program uses data from 28x28 pixel training images (784 nodes) from kaggle. Each pixel has a value associated with it between 0-255, indicating the lightness or darkness of the pixel. The dataset consists of columns starting with the label of the actual number written by the user, followed by the pixel values associated with the hand-written image. This neural network will read data, perform processing on the data using activation functions, and make a prediction on what number was written. With each iteration, the program is trained by reducing deviations from the labels, improving the accuracy of the predictions.\
 https://www.kaggle.com/competitions/digit-recognizer/data?select=train.csv
 
+Must extract train.csv file from zip file to use as input.
 
 # Math
 ## Forward Propagation: 
