@@ -16,18 +16,18 @@ m = rows, n = columns
 A[0] = X (784 pixels * m) --> input layer; 
 
 Z[1] = W[1]X + b[1] --> Unactivated first layer:\
-Applying a weight - a matrix that obtains dot product between that matrix and A[0] input matrix. Dot product is the product of 2 vectors' magnitudes and cosine of the angle between them.
+Applying a weight - a matrix that obtains dot product between that matrix and A[0] input matrix. Dot product is the product of 2 vectors' magnitudes and cosine of the angle between them.\
 ```A * B = |A||B|cosθ```\
 We're multiplying a bunch of weights that correspond to each of the 7840 connections between 1st/2nd layers of NN. Then add a constant bias to each node
 
-A[1] = gReLU(Z[1])) --> apply ReLU activation function, similar to tanh/sigmoid.
+A[1] = gReLU(Z[1])) --> apply ReLU activation function, similar to tanh/sigmoid.\
 This will add a complexity to the linear combination from the input + 1st layer.
 One of the conditions for the universal approximation theorem to be valid is that
 the neural network is a composition of nonlinear activation functions
 
 Z[2] = W[2]A[1] + b[2] --> Unactivated second layer
 
-A[2] = softmax(Z[2]) --> Apply softmax function to obtain probabilities of output layer
+A[2] = softmax(Z[2]) --> Apply softmax function to obtain probabilities of output layer.\
 ```σ(Z) = e^Zi / Σ e^Zj```
 
 ## Backwards propagation:
