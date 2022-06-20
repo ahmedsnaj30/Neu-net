@@ -60,3 +60,7 @@ b[2]:=b[2]−αdb[2]
 W[1]:=W[1]−αdW[1]
 
 b[1]:=b[1]−αdb[1]
+
+# Ouput
+![nn screenshot](https://user-images.githubusercontent.com/70961105/174529302-2d069a8a-6ecc-4522-a7dc-5a79ca6fd8ee.JPG)
+
