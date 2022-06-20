@@ -15,8 +15,7 @@ m = rows, n = columns
 
 A[0] = X (784 pixels * m) --> input layer; 
 
-Z[1] = W[1]X + b[1] --> Unactivated first layer:
-
+Z[1] = W[1]X + b[1] --> Unactivated first layer:\
 Applying a weight - a matrix that obtains dot product between that matrix and A[0] input matrix. Dot product is the product of 2 vectors' magnitudes and cosine of the angle between them.
 ```A * B = |A||B|cosθ```\
 We're multiplying a bunch of weights that correspond to each of the 7840 connections between 1st/2nd layers of NN. Then add a constant bias to each node
