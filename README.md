@@ -31,19 +31,19 @@ A[2] = softmax(Z[2]) --> Apply softmax function to obtain probabilities of outpu
 ```σ(Z) = e^Zi / Σ e^Zj```
 
 ## Backwards propagation:
-Reverse the propagation process to see how much our predictions deviate from actual label before next iteration
-dZ[2] = A[2] − Y --> Calculate the error of second layer
+Reverse the propagation process to see how much our predictions deviate from actual label before next iteration.\
+dZ[2] = A[2] − Y --> Calculate the error of second layer.\
 Predictions - actual labels; One-Hot encode correct labels into array
 https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f 
 
-dW[2] = (1/m)dZ[2] * A[1]T --> Figure how much the weight contributed to error.
+dW[2] = (1/m)dZ[2] * A[1]T --> Figure how much the weight contributed to error.\
 Obtain derivative of the loss function with respect to weights in the second
 layer.
 
-dB[2] = (1/m)ΣdZ[2] --> Figure how much the bias contributed to error.
+dB[2] = (1/m)ΣdZ[2] --> Figure how much the bias contributed to error.\
 Find the average of the absolute error of the second layer
 
-dZ[1] = W[2]T * dZ[2].∗g[1]′(Z[1]) --> Figure out how much the hidden layer was off by.
+dZ[1] = W[2]T * dZ[2].∗g[1]′(Z[1]) --> Figure out how much the hidden layer was off by.\
 Reversing the propagation proccess; Taking the errors from the second layer and
 applying the weights in reverse to get the first layer's errors. You also undo the
 activation by getting its derivative, g′.
