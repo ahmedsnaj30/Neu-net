@@ -4,7 +4,8 @@ Created a neural network using the numpy library, pandas library, and MNIST data
 https://www.kaggle.com/competitions/digit-recognizer/data?select=train.csv
 
 
-##Forward Propagation: 
+# Math
+## Forward Propagation: 
 Running image through network, perform activation function processing, and get a prediction of what number the image represents
  X = Pixels
  Y = Labels
@@ -30,7 +31,7 @@ Running image through network, perform activation function processing, and get a
  A[2] = softmax(Z[2]) --> Apply softmax function to obtain probabilities of output layer
         ```σ(Z) = e^Zi / Σ e^Zj```
 
-##Backwards propagation:
+## Backwards propagation:
  Reverse the propagation process to see how much our predictions deviate from actual label before next iteration
  dZ[2] = A[2] − Y --> Calculate the error of second layer
     Predictions - actual labels; One-Hot encode correct labels into array
