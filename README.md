@@ -9,10 +9,7 @@ Must extract train.csv file from zip file to use as input.
 ## Forward Propagation: 
 Running image through network, perform activation function processing, and get a prediction of what number the image represents.\
 https://en.wikipedia.org/wiki/Activation_function \
-X = Pixels
-Y = Labels
-T = Transpose 
-m = rows, n = columns
+X = Pixels, Y = Labels, T = Transpose, m = rows, n = columns
 
 A[0] = X (784 pixels * m) --> input layer; 
 
@@ -22,7 +19,7 @@ Applying a weight - a matrix that obtains a dot product between that matrix and 
 We're multiplying a bunch of weights that correspond to each of the 7840 connections between 1st/2nd layers of NN. Then add a constant bias to each node to offset the result of the activation function.
 
 A[1] = gReLU(Z[1])) --> apply rectifier (ReLU) activation function, similar to tanh/sigmoid.\
-This will add a complexity to the linear combination from the input + 1st layer.
+This will add a complexity to the linear combination from the input + 1st layer.\
 ```σ(Z) = max(0,Z)```\
 One of the conditions for the universal approximation theorem to be valid is that
 the neural network is a composition of nonlinear activation functions.\
