@@ -74,7 +74,7 @@ def update_vars(W1, b1, W2, b2, dW2, dB2, dW1, dB1, alpha):
     return W1, b1, W2, b2
 
 def predict(A2):
-    return np.argmax(A2, 0) # Returns the calculated probability from the second activated layer
+    return np.argmax(A2, 0)     # Returns calculated prediction from the second activated layer
 
 def accuracy(pred, Y):
     print ("Prediction:", pred, " Actual Label:", Y)
