@@ -58,8 +58,8 @@ dW[1] = (1/m)dZ[1] * A[0]T --> Figure how much the weight contributed to error i
 dB[1] = (1/m)ΣdZ[1] --> Figure how much the bias contributed to error in 0th layer
 
 
-## Variable Updates: 
-Reduces the error calculated from backwards propagation for next iteration.\
+## Updating Variables: 
+Reduces the error calculated from backwards propagation for next iteration.
 
 W[2]:=W[2]−αdW[2]
  
