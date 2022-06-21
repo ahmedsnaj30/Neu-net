@@ -16,7 +16,7 @@ A[0] = X (784 pixels * m) --> input layer;
 Z[1] = W[1]X + b[1] --> Unactivated first layer:\
 Applying a weight - a matrix that obtains a dot product between that matrix and A[0] input matrix. Dot product is the product of 2 vectors' magnitudes and cosine of the angle between them.\
 ```A * B = |A||B|cosθ```\
-We're multiplying a bunch of weights that correspond to each of the 7840 connections between 1st/2nd layers of NN. Then add a constant bias to each node to offset the result of the activation function.
+We're multiplying a bunch of weights that correspond to each of the 7840 connections between 1st/2nd layers of NN. The dot product basically checks if the weight vectors are aligned in the same direction.Then we add a constant bias to each node to offset the result of the activation function.
 
 A[1] = gReLU(Z[1])) --> apply rectifier (ReLU) activation function, similar to tanh/sigmoid.\
 This will add a complexity to the linear combination from the input + 1st layer.\
