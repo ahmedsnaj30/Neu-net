@@ -7,7 +7,7 @@ Must extract train.csv file from zip file to use as input.
 
 # Math
 ## Forward Propagation: 
-Running image through network, perform activation function processing, and get a prediction of what number the image represents.\
+Running hand-written image through network, perform activation function processing, and get a prediction of what number the image represents.\
 https://en.wikipedia.org/wiki/Activation_function \
 X = Pixels, Y = Labels, T = Transpose, m = rows, n = columns
 
