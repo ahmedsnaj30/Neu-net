@@ -27,10 +27,10 @@ X_t = X_t / 255
 #print(X_t[:, 1].shape)  #[ first_row:last_row , column_0 ]
 
 def init_vars():
-    W1 = np.random.rand(10, 784) - 0.5     # Weight between -0.5 and 0.5
-    b1 = np.random.rand(10, 1) - 0.5       # Bias
-    W2 = np.random.rand(10, 10) - 0.5
-    b2 = np.random.rand(10, 1) - 0.5 
+    W1 = np.random.rand(10, 784) - 0.5     # 1st Weight between -0.5 and 0.5
+    b1 = np.random.rand(10, 1) - 0.5       # 1st Bias
+    W2 = np.random.rand(10, 10) - 0.5      # 2nd Weight
+    b2 = np.random.rand(10, 1) - 0.5       # 2nd Bias
     return W1, b1, W2, b2
 
 def ReLU(Z):
